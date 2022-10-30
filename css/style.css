@@ -122,3 +122,150 @@ a:hover {
   color: #00ffff;
 }
 
+/*PAGINA DE ADMINISTRACION*/
+
+:root {
+  --main-bg-color: #2fa77b;
+  --main-text-color: #0406055b;
+  --second-text-color: #1047c7;
+  --second-bg-color: #3be4a6;
+}
+
+.bg-1 {
+  background-color: #19e7e742;
+}
+
+.primary-text {
+  color: #040405;
+}
+
+.second-text {
+  color: #0c379b;
+}
+
+.primary-bg {
+  background-color: #0847da;
+}
+
+.secondary-bg {
+  background-color: #a196f6;
+}
+
+.rounded-full {
+  border-radius: 100%;
+}
+
+#wrapper {
+  overflow-x: hidden;
+  background-image: linear-gradient(
+    to right,
+    #55939c,
+    #a196f6,
+    #000000cc,
+    #a196f6,
+    #55939c
+  );
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+#menu-toggle {
+  cursor: pointer;
+}
+
+.list-group-item {
+  border: none;
+  padding: 20px 30px;
+}
+
+.list-group-item.active {
+  background-color: transparent;
+  color: var(--main-text-color);
+  font-weight: bold;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+.flor-1 {
+  width: 300px;
+  height: 270px;
+}
+
+.carlos-1 {
+  width: 300px;
+  height: 260px;
+}
+
+/*  Maps Responsive */
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 400px; /*Reduce este valor si el mapa fuera muy alto, por ejemplo 250px, puedes usar porcentajes, 50%*/
+  position: relative;
+  height: 0;
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/*tabla de administracion*/
+
+.outer-wrapper {
+  margin: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.9);
+}
+.table-wrapper {
+  overflow-x: scroll;
+  height: fit-content;
+  max-height: 66.4vh;
+
+  margin-top: 22px;
+
+  margin: 15px;
+  padding-bottom: 20px;
+}
