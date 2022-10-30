@@ -13,7 +13,10 @@ body {
   padding: 0;
 }
 
-
+.headerTop {
+  background-color: #030207c0;
+  position: fixed;
+}
 
 main {
   margin-top: 5rem;
