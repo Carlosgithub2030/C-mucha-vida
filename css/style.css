@@ -122,6 +122,15 @@ a:hover {
   color: #00ffff;
 }
 
+/*footer*/
+
+footer {
+  background-color: #030207c0;
+}
+.h5Footer {
+  background-color: rgba(255, 255, 255, 0.418);
+}
+
 /*PAGINA DE ADMINISTRACION*/
 
 :root {
