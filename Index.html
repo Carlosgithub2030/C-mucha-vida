@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="Medina Juan Carlos-Lancioni Florencia Noelia"
+    />
+    <meta name="description" content="administracion de datos" />
+    <meta name="keywords" content="agenda,contactos,CRUD,js" />
+    <title>Clinica Medica</title>
+    <!-- CSS only -->
+    <link rel="stylesheet"  href="../css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header >
+      <nav class="navbar navbar-expand-lg navbar-dark  headerTop">
+        <div class="container">
+          <a class="navbar-brand" href="#">Mucha Vida</a>
+          <img src="./img/corazon.png" alt="imagen corazon" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="nav nav-tabs me-auto mx-auto mb-lg-0 justify-content-end"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./Index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#datosContacto"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#AcercaDe">Acerca De</a>
+              </li>
+            </ul>
+
+            <form class="d-flex" role="login">
+              <a
+                href="/loginInicio.html"
+                class="btn btn-danger me-2"
+                tabindex="-1"
+                role="button"
+                aria-disabled="true"
+                >Login</a
+              >
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="text-center mb-5">¿Cuando acudir al especialista?</h1>
+      <div class="container ">
+        <div class="row">
+          <div class="col ">
+       
+            <div class="card-group">
+              <div class="card text-bg-dark">
+                <img
+                  src="./img/Cardiologia clinica/endocrinologia.jpg  "
+                  class="card-img-top"
+                  alt="endocrinologia"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Endocrinologia</h4>
+                  <p class="card-text">
+                    El endocrinólogo es el especialista que controla las
+                    enfermedades que afectan a nuestro metabolismo, siendo las
+                    más frecuentes la diabetes, los trastornos tiroideos, los
+                    trastornos de las glándulas hipófisis, sexuales y
+                    suprarrenales, y los trastornos de la nutrición. Se
+                    recomienda acudir al endocrino y realizar un estudio
+                    metabólico en aquellas personas que detectan cambios
+                    inexplicables en su metabolismo de base, por ejemplo, un
+                    aumento o disminución de peso, nerviosismo, cambio en la
+                    percepción de la temperatura, pérdida o aparición de
+                    cabello, alteraciones menstruales, secreción mamaria, una
+                    disminución de la libido, etc.
+                  </p>
+                </div>
+              </div>
+              <div class="card text-bg-secondary">
+                <img
+                  src="./img/Cardiologia clinica/ginecologia.jpg"
+                  class="card-img-top"
+                  alt="ginecologia"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Ginecologia</h4>
+                  <p class="card-text">
+                    Es importante acudir a un experto en Cardiología si se sufre
+                    alguna enfermedad del corazón o si se tiene sospecha de
+                    ello, con los siguientes síntomas: dolor o molestia en el
+                    pecho que se da cuando el músculo cardíaco no recibe
+                    suficiente sangre rica en oxígeno (angina), presión o
+                    quemazón en el pecho. Además, en las mujeres se pueden dar
+                    lo siguientes síntomas específicos: dolor en el cuello, la
+                    mandíbula, la garganta, el abdomen o la espalda. La gravedad
+                    de la angina varía y el dolor puede empeorar u ocurrir con
+                    más o menos frecuencia, según el estrechamiento de las
+                    arterias coronarias.
+                  </p>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+              <div class="card text-bg-dark">
+                <img
+                  src="./img/Cardiologia clinica/tarjeta 1.jpg"
+                  class="card-img-top"
+                  alt="cardiologia"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Cardiologia</h4>
+                  <p class="card-text">
+                    Existen determinados síntomas que pueden alertarnos de la
+                    necesidad de acudir a una consulta cardiológica a cualquier
+                    edad. La aparición de patologías cardíacas, de hecho, está
+                    relacionada con una serie de signos que pueden prevenir la
+                    aparición de un evento cardiovascular más grave. Por ello,
+                    es importante, tener en cuenta determinados síntomas. Dolor
+                    o presión en el pecho. Sentir dolor o presión en el centro
+                    del pecho durante unos minutos puede ser un síntoma de
+                    patología cardiovascular importante. ... Palpitaciones. ...
+                    Fatiga o cansancio intenso. ... Disfunción eréctil. ...
+                    Hinchazón en los miembros inferiores. ... Mareos.
+                  </p>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     <h2 class=" container my-5">¿Que es?</h2>
+
+      <article class="m-5">
+        <div class="container">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button fs-3 text-bg-dark"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Endocrinologia
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body text-bg-dark">
+                  <p>
+                    Es una disciplina de la medicina que estudia el sistema
+                    endocrino y las enfermedades provocadas por un
+                    funcionamiento inadecuado del mismo. Algunas de las
+                    enfermedades de las que se ocupa la endocrinología son la
+                    diabetes mellitus provocada por deficiencia de insulina o
+                    resistencia a su acción, el hipotiroidismo por déficit en la
+                    producción de hormonas tiroideas, el hipertiroidismo por
+                    excesiva producción de hormonas tiroideas la enfermedad de
+                    Cushing debida generalmente a excesiva producción de
+                    cortisol por las glándulas suprarrenales, y el
+                    híperaldosteronismo o aldosteronismo caracterizado por la
+                    sobreproducción y secreción de la hormona aldosterona.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed fs-3 text-bg-secondary"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Ginecologia
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body text-bg-dark">
+                  <p>
+                    La ginecología es una especialidad de la medicina que se
+                    centra en el estudio del sistema reproductor femenino. Los
+                    profesionales que se ocupan de esta especialidad se conocen
+                    como ginecólogos, que son los especialistas que atienden
+                    todas las patologías relacionadas con los órganos femeninos
+                    como el útero, la vagina y los ovarios, y también de la
+                    prevención de enfermedades futuras. En el ámbito de la
+                    ginecología, se acompaña a la mujer a lo largo de toda su
+                    vida, desde la menarquía hasta la menopausia, para
+                    garantizar el buen funcionamiento de sus órganos
+                    reproductivos.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed fs-3 text-bg-dark"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Cardiologia
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body text-bg-dark">
+                  <p>
+                    La cardiología es la rama de la medicina que estudia,
+                    diagnostica y trata las enfermedades del corazón y aparato
+                    circulatorio. Se trata de una especialidad médica pero no
+                    quirúrgica, ya que quienes abordan las cirugías cardiacas
+                    son los cirujanos cardíacos o cardiovasculares. Normalmente
+                    un equipo cardiológico está integrado por un cardiólogo, un
+                    cirujano cardíaco y un fisiatra.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <section>
+        <div class="container color">
+          <div
+            id="carouselControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./img/imagen carrousel 1.jpg"
+                  class="d-block w-100 carrousel"
+                  alt="carrousel1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./img/carrousel 2.jpg"
+                  class="d-block w-100 carrousel"
+                  alt="carrouse2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./img/carrousel 3.jpg"
+                  class="d-block w-100 carrousel"
+                  alt="carrousel3"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+
+      
+
+      <div class="container color col-lg-8 col-sm-8 col-md-8">
+        <div class="row justify-content-center"></div>
+        <div class="col-sm-8 pt-5 pb-5"></div>
+        <h1 id="AcercaDe" class="text-center py-5">Bienvenidos</h1>
+        <h2>¿Quienes Somos?</h2>
+        <p class="py-4 fs-4">
+          Nos dedicamos a brindar servicios médicos confiables para cuidar la
+          salud de nuestra comunidad con calidez y profesionalismo. Buscamos
+          facilitar las alternativas para promover y cuidar la salud poniendo el
+          foco en la relación médico-paciente.
+        </p>
+        <img
+          src="./img/nosotros/quienes somos.jpg"
+          class="img-fluid mx-auto d-block mt-5 mb-5 imgNosotros img-thumbnail"
+          alt="quienes somos"
+        />
+
+        <h2>¿Qué tiene de diferente nuestro servicio?</h2>
+        <p class="py-4 fs-4">
+          La excelencia profesional es central en nuestra propuesta, pero
+          también lo es la calidad humana. ponemos a disposición del paciente un
+          equipo de profesionales seleccionados en función de su alta formación
+          académica para la atención de diferentes especialidades, tanto de
+          adultos como niños.
+        </p>
+        <img
+          src="./img/nosotros/diferencias en  nuestro servicio.jpg"
+          class="img-fluid mx-auto d-block mt-5 mb-5 imgNosotros img-thumbnail"
+          alt="diferencias "
+        />
+        <h2>Vision</h2>
+        <p class="py-4 fs-4">
+          Crecer y competir en base a la calidad y seguridad asistencial, la
+          actualización e innovación científica/tecnológica, y el desarrollo de
+          las personas que conforman el equipo
+        </p>
+        <img
+          src="./img/nosotros/vision.jpg"
+          class="img-fluid mx-auto d-block mt-5 mb-5 imgNosotros img-thumbnail"
+          alt="nuestra vision"
+        />
+        <h2>Liderazgo</h2>
+        <p class="py-4 fs-4">
+          estamos comprometidos en buscar constantemente la mejor calidad en
+          todo lo que hacemos. Nuestra Red Integrada de Salud es la suma de
+          esfuerzos de un equipo humano apasionado, exigente y visionario que
+          busca crear la mejor experiencia en salud para nuestros pacientes que
+          nos eligen día a día.
+        </p>
+        <img
+          src="./img/nosotros/liderazgo.jpg"
+          class="img-fluid mx-auto d-block mt-5 mb-5 imgNosotros img-thumbnail"
+          alt="Liderazgo"
+        />
+      </div>
+<section>
+
+   <h2  id="datosContacto" class="text-center py-5 " >Datos De Contacto  </h2>
+
+    <div class="container py-5 ">
+    <div class=" row ">
+        <div class="col-lg-8 col-md-12 pe-3">
+       <ul class="list-group">
+       
+      
+      <li class="list-group-item list-group-item-primary">Nombre:Medina Juan Carlos</li>
+      <li class="list-group-item list-group-item-secondary">Direccion:Republica de siria 1395</li>
+      <li class="list-group-item list-group-item-success">Codigo postal:4146</li>
+      <li class="list-group-item list-group-item-danger">Localidad:concepcion</li>
+      <li class="list-group-item list-group-item-warning">Departamento:chicligasta</li>
+      <li class="list-group-item list-group-item-info">Correo:Chufo2030@hotmail.com</li>
+      <li class="list-group-item list-group-item-light">Celular:3865214259</li>
+      
+    </ul>
+    </div>
+   
+
+    
+        <div class="col-lg-4 col-md-12 pt-2 text-center  py-5 ">
+    <img src="./img/carlos.jpg" class="rounded-circle carlos-1" alt="carlos">
+
+    </div>
+
+    <div class="col-lg-4 col-md-12 pt-2 py-5 text-center  ">
+      <img src="./img/flor.jpg" class="rounded-circle  flor-1" alt="flor ">
+  
+      </div>
+  
+    <div class="col-lg-8 col-md-12 pe-3 ">
+      <ul class="list-group ">
+       
+      
+        <li class="list-group-item list-group-item-primary">Nombre:Florencia Lancioni Noelia</li>
+        <li class="list-group-item list-group-item-secondary">Direccion:Joaquin v gonzales 144</li>
+        <li class="list-group-item list-group-item-success">Codigo postal:4146</li>
+        <li class="list-group-item list-group-item-danger">Localidad:concepcion</li>
+        <li class="list-group-item list-group-item-warning">Departamento:chicligasta</li>
+        <li class="list-group-item list-group-item-info">Correo:florchuu1995@hotmail.com</li>
+        <li class="list-group-item list-group-item-light">Celular:3865452849</li>
+        
+      </ul>
+
+    </div>
+   
+</section>
+
+
+<body id="bodyFormularioContacto ">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12">
+        <form
+           class="Formulario1 needs-validation"
+          onsubmit="validar()"
+          id="formContacto"
+          novalidate
+        >
+          <h3 class="display-5 text-dark texr-center">Formulario Contacto</h3>
+
+          <div class="form-group">
+
+            <label for="nombreContacto" class="form-label">Nombre</label>
+              <input
+              type="text"
+              placeholder="Nombre completo"
+              class="form-control"
+              required
+              id="nombreContacto"
+              id="nombre"
+              name="nombre"
+            />
+            <div class="valid-feedback">Todo Bien</div>
+            <div class="invalid-feedback">Es Necesario Poner El Nombre</div>
+
+
+          <div>
+            <label>Direccion</label>
+            <input
+              type="text"
+              placeholder="Domicilio"
+              class="form-control"
+              required
+              id="direccion"
+              name="direccion"
+            />
+            <div class="valid-feedback">Todo Bien</div>
+            <div class="invalid-feedback">Es Necesario Poner La Direccion</div>
+
+
+          </div>
+          </div>
+          <div>
+            <label for="telefonoContacto" class="form-label">Telefono</label>         
+               <input
+              type="text"
+              placeholder="Numero de celular"
+              class="form-control"
+              id="telefonoContacto"         
+             id="celular"
+              name="celular"
+              required
+            />
+            <div class="valid-feedback">Todo Bien</div>
+            <div class="invalid-feedback">Es Necesario Poner un celular</div>
+
+
+          </div>
+          <div>
+            <label for="emailContacto" class="form-label">Email</label>
+              <input
+              type="email"
+              placeholder="email"
+              class="form-control"
+              class="form-control"
+              id="emailContacto"
+              id="email"
+              name="email"
+              required
+            />
+            <div class="valid-feedback">Todo Bien</div>
+            <div class="invalid-feedback">Es Necesario Poner email</div>
+
+
+          </div>
+          <div class="my-4">
+            <textarea name="Mensaje" class="form-control" placeholder="">
+Escriba aqui su mensaje</textarea
+            >
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-dark form-control">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <section class="w-50 mx-auto text-center pt-5">
+    <h1 class="p-4 fs-2 border-top border-3">Direccion</h1>
+
+    <div class="map-responsive ">
+     
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3543.888291170666!2d-65.58880128590141!3d-27.3479606829421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9423cf5bbc0aa011%3A0xb750bfd5c1ade89d!2zSm9hcXXDrW4gVi4gR29uesOhbGV6IDE0NCwgVDQxNDYgQ29uY2VwY2nDs24sIFR1Y3Vtw6Fu!5e0!3m2!1ses-419!2sar!4v1660713818891!5m2!1ses-419!2sar"
+        width="700" height="500"  allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+   
+    
+    </div>
+
+    <br><br>
+
+  </section>
+
+
+
+    </main>
+
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script   type="module"  src="./js/admin/admin.js"></script>
+   <script src="./js/login.js"></script>
+  </body>
+</html>
